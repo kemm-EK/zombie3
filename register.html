@@ -19,7 +19,7 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> ZOMBIE INVASION </a>
       </div>
       <ul class="menu">
         <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
@@ -34,18 +34,99 @@
   </header>
 
   <main>
-    <h1>INDBERET</h1>
+    <h1>Registrer venligst dit zombie-møde</h1>
     <section id="form-section">
       <article id="form-info">
-        <h2>Overskrift</h2>
-        <p>Tekst</p>
+        <p>Herunder kan du registrere, hvad du har set og hvordan dit møde gik. Det er vigtigt for alles sikkerhed, at
+          du svarer så sandfærdigt som muligt.</p>
       </article>
-      <form id="webform"></form>
+      <form id="webform">
+        <div class="form-group">
+          <label for="firstname"> Dit navn </label>
+          <input required type="text" id="firstname" name="firstname" />
+          <p class="error-message">Indtast venligst dit navn</p>
+        </div>
+        <div class="form-group">
+          <label for="zone"> Zone</label>
+          <input required type="zone" id="zone" name="zone" />
+          <p class="error-message">Indtast venligst i hvilken zone du har mødt zombien</p>
+        </div>
+        <div class="form-group">
+          <label for="age"> Din alder </label>
+          <input type="number" id="age" name="age" min="1" max="120" />
+          <p class="error-message">Er du sikker?</p>
+        </div>
+
+        <div class="form-group">
+          <label for="date"> Dato for mødet </label>
+          <input type="date" id="date" name="date" />
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend>Hvis du er blevet bidt: Angiv hvor</legend>
+            <label for="head">
+              <input type="checkbox" id="head" name="hurt" value="hoved" />
+              I hovedet
+            </label>
+            <label for="arm">
+              <input type="checkbox" id="arm" name="hurt" value="arm" />
+              I armen
+            </label>
+            <label for="leg">
+              <input type="checkbox" id="leg" name="hurt" value="ben" />
+              I benet
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend>Synes du at frisk hjerne lyder appetitligt?</legend>
+
+            <label for="yes">
+              <input type="radio" id="yes" name="isbraingood" />
+              Ja
+            </label>
+
+            <label for="no">
+              <input type="radio" id="no" name="isbraingood" />
+              Nej
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <label for="comment">Skriv en sammenhængende sætning</label>
+          <textarea required name="comment" id="comment" name="comment"></textarea>
+        </div>
+
+
+        <button>Indsend data</button>
+
+      </form>
     </section>
     <section id="form-summary">
-      <h2>Summary</h2>
+      <h2>Opsummering</h2>
       <article>
-        <p class="placeholder">Opsummering</p>
+        <p class="placeholder">Bekræft venligst dine indtastninger</p>
+        <div id="output">
+          <p>Dit navn: </p>
+          <p id="output-firstname"></p>
+          <p>Encounter Zone: </p>
+          <p id="output-zone"></p>
+          <p>Din alder: </p>
+          <p id="output-age"></p>
+          <p>Dato for encounter: </p>
+          <p id="output-date"></p>
+          <p>Bid: </p>
+          <p id="output-hurt"></p>
+          <p>Du har lyst til hjerne: </p>
+          <p id="output-isbraingood"></p>
+          <p>Din sætning: </p>
+          <p id="output-comment"></p>
+
+        </div>
       </article>
     </section>
   </main>
@@ -71,6 +152,9 @@
       </ul>
     </nav>
   </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>

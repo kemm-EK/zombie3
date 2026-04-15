@@ -7,20 +7,20 @@
 
   /* Logotype */
   --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
-  --font-logotype-size: 1rem;
+  --color-text-logotype: #fffae2;
+  --font-logotype-size: 2rem;
 
   /* Global menu */
   --color-menu-bg: #6f90eb;
   /* Links */
   --color-link-bg: #fffae2;
   --color-link-hover: #fff;
-  --color-link-active: #99958f;
+  --color-link-active: #fceb94;
   --border-radius-links: 25px;
 
   /* Headlines (size)*/
-  --font-h1-size: 1rem;
-  --font-h2-size: 1rem;
+  --font-h1-size: 2rem;
+  --font-h2-size: 1.4rem;
   --font-h3-size: 1rem;
 
   --headline2-size: 1rem;
@@ -32,7 +32,7 @@
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #000;
+  --color-text-inverted: #fffae2;
 
   /* Andet tekst */
   --followup-text-size: 1rem;

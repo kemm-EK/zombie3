@@ -1,6 +1,7 @@
 #head-txt {
   fill: rgb(54, 54, 54);
 }
+
 .info-graphic,
 .info-text {
   background-color: var(--color-info-bg);
@@ -14,14 +15,13 @@
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-headline-bg);
-  color: var(--color-text);
+  color: var(--color-text-inverted);
   margin-bottom: 1rem;
 }
 .info-text h3 {
-  font-size: 0.8rem;
   line-height: 0.8rem;
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
   padding: 0;
 }
 .info-text > *:not(:first-child) {
