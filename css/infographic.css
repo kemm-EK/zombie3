@@ -40,3 +40,8 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-card-bg-inverted);
 }
+#Head:hover,
+#R_arm-2:hover,
+#R_leg-2:hover {
+  cursor: pointer;
+}
