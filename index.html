@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/frontpage.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="icon" type="image/png" href="img/fav.png">
@@ -32,7 +33,51 @@
     </nav>
   </header>
 
-  <main>
+  <main id="frontpage">
+    <!-- Header sektion med logo -->
+    <section id="frontpage-header">
+      <img id="logo" src="img/logo.svg" alt="">
+      <div id="frontpage-header-text">
+        <p>DANMARK ER INVADERET</p>
+        <p>Her er statens generelle guidelines</p>
+      </div>
+    </section>
+
+    <div id="main-wrapper">
+      <!-- Artikler -->
+      <section id="frontpage-articles">
+        <article>
+          <img src="img/zombie.svg" alt="En helt almindelig zombie">
+          <div class="frontpage-articles-text">
+            <h3>NÆRKONTAKT</h3>
+            <p>Hvad skal man gøre, hvis man kommer i nær kontakt med en zombie.</p>
+            <a href="instruction.html">Se vores infografik</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Nyheder (med popover) -->
+      <section class="frontpage-news">
+        <article>
+          <h3>BLÅ BYLDER</h3>
+          <p>Blå bylder kan vise, at du er smittet</p>
+          <a href="#">Læs mere</a>
+        </article>
+        <article>
+          <h3>GULE BYLDER</h3>
+          <p>Gule bylder kan vise, at du er smittet</p>
+          <a href="#">Læs mere</a>
+        </article>
+        <article>
+          <h3>RØDE BYLDER</h3>
+          <p>Røde bylder kan vise, at du er smittet</p>
+          <a href="#">Læs mere</a>
+        </article>
+      </section>
+    </div>
+
+    <!-- FAQ (med accordion) -->
+
 
   </main>
 
