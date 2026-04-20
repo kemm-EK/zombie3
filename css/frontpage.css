@@ -161,3 +161,39 @@ article > img {
   transition: 0.3s allow-discrete;
   background-color: aqua;
 }
+
+/* Accordion */
+#faq-wrapper {
+  border-top: 1px solid #0004;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+details {
+  width: 50ch;
+  /* padding: 1rem; */
+  margin: 1rem 0;
+  background-color: var(--color-cta-card-bg);
+  border-radius: var(--border-radius);
+}
+summary {
+  padding: 0.6rem 0 0.6rem 1rem;
+}
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 0.3s allow-discrete;
+}
+[open]::details-content {
+  height: auto;
+  padding: 0.5rem 0 0.5rem 2.5rem;
+  background-color: var(--color-cta-card-bg-inverted);
+}
+summary::marker {
+  content: none;
+}
+summary::before {
+  content: "\1F637\00a0";
+}
+[open] summary::before {
+  content: "\01F92E\00a0";
+}
